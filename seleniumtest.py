@@ -1,14 +1,9 @@
-import os
-import time
 from selenium import webdriver
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+print("hello, Eric 3")
 
-print('test start')
+
+
 driver = webdriver.Remote(
-		command_executor='http://172.18.0.9:4444/wd/hub',
-		desired_capabilities={
-			'browserName': 'firefox',
-			'javascriptEnabled': True
-		}
-	)
-driver.get('http://softwaretester.info/')
-print('test end')
+	command_executor='http://selenium-hub:4444/wd/hub',
+	desired_capabilities=DesiredCapabilities.CHROME)
