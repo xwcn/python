@@ -10,5 +10,5 @@ print("Driver is created!")
 
 driver.get("http://www.python.org")
 print(driver.title)
-assert "Python" in driver.title
+assert "PythonX" in driver.title
 driver.close()
